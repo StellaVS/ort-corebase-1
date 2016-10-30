@@ -5,18 +5,18 @@ import java.util.Scanner;
 public class SwitchConsts {
 	
 	public static void main(String[] args) {
-		//инициализация переменных
+		//РёРЅРёС†РёР°Р»РёР·Р°С†РёСЏ РїРµСЂРµРјРµРЅРЅС‹С…
 		double firstOperand, secondOperand;
 		Scanner scanner = new Scanner(System.in);
-		//Ввод данных
-		System.out.println("Введите первый операнд");
+		//Р’РІРѕРґ РґР°РЅРЅС‹С…
+		System.out.println("Р’РІРµРґРёС‚Рµ РїРµСЂРІС‹Р№ РѕРїРµСЂР°РЅРґ");
 		firstOperand = scanner.nextDouble();
-		System.out.println("Введите второй операнд");
+		System.out.println("Р’РІРµРґРёС‚Рµ РІС‚РѕСЂРѕР№ РѕРїРµСЂР°РЅРґ");
 		secondOperand = scanner.nextDouble();
-		System.out.println("Введите опрецию:\n1. Сложение\n"
-				+ "2. Вычитание\n3. Умножение\n4. Деление");
+		System.out.println("Р’РІРµРґРёС‚Рµ РѕРїСЂРµС†РёСЋ:\n1. РЎР»РѕР¶РµРЅРёРµ\n"
+				+ "2. Р’С‹С‡РёС‚Р°РЅРёРµ\n3. РЈРјРЅРѕР¶РµРЅРёРµ\n4. Р”РµР»РµРЅРёРµ");
 		int operation = scanner.nextInt();
-		//Вычисление результата
+		//Р’С‹С‡РёСЃР»РµРЅРёРµ СЂРµР·СѓР»СЊС‚Р°С‚Р°
 		double result;
 		switch (operation) {
 		case 1:
@@ -32,11 +32,11 @@ public class SwitchConsts {
 			result = firstOperand / secondOperand;
 			break;
 		default:
-			System.out.println("Вы ввели неверную операцию");
-			return; //Утечка ресурсов!!! сканнер не закрыт.
-				    //Этим опасен return посреди метода
+			System.out.println("Р’С‹ РІРІРµР»Рё РЅРµРІРµСЂРЅСѓСЋ РѕРїРµСЂР°С†РёСЋ");
+			return; //РЈС‚РµС‡РєР° СЂРµСЃСѓСЂСЃРѕРІ!!! СЃРєР°РЅРЅРµСЂ РЅРµ Р·Р°РєСЂС‹С‚.
+				    //Р­С‚РёРј РѕРїР°СЃРµРЅ return РїРѕСЃСЂРµРґРё РјРµС‚РѕРґР°
 		}
-		System.out.println("Результат = " + result);
+		System.out.println("Р РµР·СѓР»СЊС‚Р°С‚ = " + result);
 		scanner.close();
 	}
 }
