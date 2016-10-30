@@ -1,5 +1,8 @@
 package ua.dp.ort.module4;
 
+/**
+ * В данном примере мы разбиваем число на цифры слева направо.
+ */
 public class LeftToRightDigits {
 	public static void main(String[] args) {
 		int number = 123456;
